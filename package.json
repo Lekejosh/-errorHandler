@@ -1,5 +1,5 @@
 {
-    "name": "@errorhandler",
+    "name": "@errorhandler/middleware",
     "version": "0.0.1",
     "description": "",
     "main": "./build/index.js",
@@ -8,7 +8,7 @@
         "clean": "del ./build/*",
         "build": "npm run clean && tsc",
         "release": "standard-version",
-        "pub": "git add . && git commit -m \"updates\" && npm version patch && npm run build && npm publish"
+        "pub": "npm version patch && npm run build && npm publish"
     },
     "keywords": [],
     "author": "Adeleke Joshua <lekejosh6wf@gmail.com>",
