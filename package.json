@@ -1,0 +1,23 @@
+{
+    "name": "@errorhandler",
+    "version": "0.0.0",
+    "description": "",
+    "main": "./build/index.js",
+    "type": "./build.index.d.ts",
+    "scripts": {
+        "clean": "del ./build/*",
+        "build": "npm run clean && tsc",
+        "release":"standard-version",
+        "pub": "git add . && git commit -m \"updates\" && npm version patch && npm run build && npm publish"
+    },
+    "keywords": [],
+    "author": "Adeleke Joshua <lekejosh6wf@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/express": "^4.17.18",
+        "@types/node": "^20.8.0",
+        "del-cli": "^5.1.0",
+        "standard-version": "^9.5.0",
+        "typescript": "^5.2.2"
+    }
+}
