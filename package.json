@@ -1,13 +1,13 @@
 {
     "name": "@errorhandler",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "",
     "main": "./build/index.js",
     "type": "./build.index.d.ts",
     "scripts": {
         "clean": "del ./build/*",
         "build": "npm run clean && tsc",
-        "release":"standard-version",
+        "release": "standard-version",
         "pub": "git add . && git commit -m \"updates\" && npm version patch && npm run build && npm publish"
     },
     "keywords": [],
